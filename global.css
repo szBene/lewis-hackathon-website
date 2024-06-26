@@ -51,6 +51,7 @@ button {
 .source-code-pro {
 	font-family: 'Source Code Pro', monospace !important;
 	font-optical-sizing: auto;
+	letter-spacing: -1px;
 }
 
 .white-100 {
@@ -101,6 +102,10 @@ button {
 	font-weight: 900 !important;
 }
 
+.fs-20 {
+	font-size: 20px !important;
+}
+
 .fs-24 {
 	font-size: 24px !important;
 }
@@ -109,16 +114,16 @@ button {
 	font-size: 30px !important;
 }
 
-.fs-48 {
-	font-size: 48px !important;
+.fs-40 {
+	font-size: 40px !important;
 }
 
-.fs-64 {
-	font-size: 64px !important;
+.fs-56 {
+	font-size: 56px !important;
 }
 
-.fs-144 {
-	font-size: 144px !important;
+.fs-120 {
+	font-size: 120px !important;
 }
 
 .text-center {

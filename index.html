@@ -130,10 +130,21 @@
 		}
 	}
 
+
+	@media (max-width: 85rem) {
+		.body-section {
+			margin-top: 3vh;
+		}
+	}
+
 	@media (max-width: 70rem) {
 		body {
 			overflow-y: auto;
 			max-width: 95vw;
+		}
+
+		.body-section {
+			margin-top: 2vh;
 		}
 
 		.footer-section {
@@ -142,6 +153,20 @@
 			flex-direction: row;
 			margin-top: 5vh;
 			margin-bottom: 0;
+		}
+	}
+
+	@media (min-width: 2000px) {
+		body {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			width: 1800px;
+			margin: auto;
+		}
+
+		.body-section {
+			width: 80% !important;
 		}
 	}
 </style>

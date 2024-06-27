@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<div class="title-section">
+	<div class="title-section align-center">
 		<h1 class="rubik white-100 fw-800 fs-120 text-center">HACKATHON</h1>
 		<h3 class="rubik white-100 fw-300 fs-40 text-center">with Lewis</h3>
 		<h2 class="rubik white-90 fw-600 fs-56 text-center">July 10-20, 2024</h2>
@@ -46,11 +46,11 @@
 
 <style>
 	h1 {
-		margin-bottom: -20px;
+		margin-bottom: -1.25rem;
 	}
 
 	h2 {
-		margin-top: 10px;
+		margin-top: 0.6rem;
 	}
 
 	body {
@@ -58,35 +58,69 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: safe space-between;
+		overflow-y: hidden;
 	}
 
 	.title-section {
-		height: 40vh;
+		position: relative;
+		max-height: 40vh;
+		width: 52rem;
+		max-width: 80vw;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
 
 	.body-section {
-		height: 50vh;
-		max-width: 70%;
-		margin: 0 auto;
-		flex-direction: column;
-		justify-content: center;
-		gap: 10px !important;
+		position: relative;
+		max-height: 50vh;
+		width: 70rem;
+		max-width: 90vw;
+		margin: 9vh auto;
+		gap: 0.6rem !important;
 	}
 
 	.buttons {
-		max-width: 50%;
-		margin: 35px auto;
+		position: relative;
+		max-height: 10vh;
+		margin: 2vh auto;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
-		gap: 20px !important;
+		gap: 1.25rem !important;
 	}
 
 	.footer-section {
+		position: fixed;
+		bottom: 0;
 		display: flex;
 		flex-direction: row;
+	}
+
+	@media (min-width: 100rem) {
+		.title-section {
+			margin-top: 10vh;
+		}
+
+		.body-section {
+			display: flex;
+			flex-direction: column;
+			margin-top: 5vh;
+		}
+	}
+
+	@media (max-width: 70rem) {
+		body {
+			overflow-y: auto;
+			max-width: 95vw;
+		}
+
+		.footer-section {
+			position: relative !important;
+			display: flex;
+			flex-direction: row;
+			margin-top: 5vh;
+			margin-bottom: 0;
+		}
 	}
 </style>

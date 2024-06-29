@@ -1,0 +1,35 @@
+What's the Deal?
+Our hackathon is a 10-day event where you can dive into coding, learn new skills, and work on an exciting project with a like-minded team. This is your chance to unleash your creativity and coding skills from the comfort of your own home. Starting on July 20, we'll kick things off by announcing the theme. You'll then have 10 days to brainstorm, design, and develop a project that fits the theme.
+This event is all about pushing your limits, trying new things, having fun and learning while doing it. Whether you want to build a game, an app, or a new tool, the sky is the limit!
+Here is how it goes:
+- Registration: On July 6, we will open registration, and you'll be able to sign up for the event. Registration will be kept opent until submission day.
+- Theme Announcement: On July 20, we'll reveal the hackathon theme, which will guide your project development.
+- Project Development: Work individually or in teams to create something amazing. You're free to use any tools, languages, or frameworks that comply with out rules.
+- Submission: Submit your project by the deadline on July 30. We'll provide more detail on this closer to the Hackathon's start date.
+- Results: Projects will be judged based on <insert criterias here>. Winners will be announced <insert time here> after submissions close.
+
+Who Can Join and How to Prepare
+Everyone! Whether you're a beginner looking for your first real challenge or a seasoned developer ready to take on some more, there is a spot for you. Just bring your enthusiasm and creativity, and the rest will come naturally.
+If you're not an advanced programmer, we recommend to join a team of up to 3 people. There are many like you, we are sure you'll be able to find or create one yourself. If you are looking to join or create a team, check out the looking-for-teams channel on our Discord server.
+We also recommend to brush up on your skills beforehand, so you can work more effectively. You never know what the project will require.
+How to join?
+Once you decided to participate in a team or alone, head over to our Registration form. Here, you'll need to fill out some basic info. Important, if you are part of a team, you all need to enter the same team name to be considered a team.
+
+Prizes
+We will choose 3 winning submissions for each category, all of which will receive the following prizes:
+1.	First place
+2.	Second place
+3.	Third place
+We will also choose a few other projects as honorary mentions, and they will also receive extra prizes:
+- Insert
+- Prizes
+Here is how you can get them:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. - please figure this out guys
+
+FAQ
+Q: What if I don't have, or don't want to have a team?
+A:	No problem! You can participate as an individual or find a team through our Discord server.
+Q: Do I need to stay online the whole time?
+A: While you need to be available to work on your project, you or your team can manage your own schedule and work at your own pace. There is no need to report your progress to us.
+Q: Is this free to join?
+A: Yes! Thanks to our sponsors, this event is completely free.

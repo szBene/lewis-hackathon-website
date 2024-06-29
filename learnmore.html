@@ -171,19 +171,20 @@
 
 	.navbar {
 		/* this is the outer part, pos needs to stay here */
-		position: sticky;
+		width: 100%;
+		position: fixed;
 		top: 0;
+		left: 0;
 		/* source: https://stackoverflow.com/a/23752288 */
 		text-align: center;
-		padding-bottom: 2px;
+		padding-bottom: 1.5px;
 		background:
 			linear-gradient(to right,
-				#0F1B5700 1%,
 				#0F1B57 40%,
 				#0F248A 60%,
-				#6680FF 96%,
-				#0F1B57 99%, #0F1B5700 100%) left bottom #00000000 no-repeat;
-		background-size: 100% 4px;
+				#6680FF 98%,
+				#0F1B57 100%) left bottom #00000000 no-repeat;
+		background-size: 100% 5px;
 	}
 
 	nav {
@@ -194,7 +195,6 @@
 		padding: 0.8rem 1.6rem;
 		z-index: 1000;
 		background: linear-gradient(to right, #0F1B57 10%, #0A0A0A42 90%) !important;
-		border-radius: 1rem;
 		backdrop-filter: blur(7px);
 		-webkit-backdrop-filter: blur(7px);
 	}
@@ -219,6 +219,7 @@
 		align-items: center;
 		width: clamp(80%, 70% + 10vw, 100%);
 		margin: 1.2rem auto;
+		margin-top: 6rem;
 	}
 
 	.underline {
@@ -271,16 +272,30 @@
 		margin-left: clamp(0.5rem, 0.5rem + 0.5vw, 1rem);
 	}
 
-	@media (max-width: 60rem) {
+	@media (max-width: 50rem) {
 		nav {
 			display: flex;
 			justify-content: space-around;
 			flex-direction: column !important;
 			padding: 0.8rem 0.5rem;
+			background: linear-gradient(to right, #0A0A0A42 0%, #0F1B57 30%, #0F1B57 70%, #0A0A0A42 100%) !important;
+		}
+
+		.navbar {
+			background:
+				linear-gradient(to right,
+					#0F1B57 0%,
+					#0F248A 20%,
+					#6680FF 40%,
+					#6680FF 60%,
+					#0F248A 80%,
+					#0F1B57 100%) left bottom #00000000 no-repeat;
+			background-size: 100% 5px !important;
 		}
 
 		.content {
 			margin: 0.6rem auto;
+			margin-top: 7rem;
 		}
 	}
 </style>

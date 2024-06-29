@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hackathon with Lewis</title>
+	<link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+	<div class="navbar">
+		<nav>
+			<a class="nav-title" href="index.html">
+				<h1 class="title1 rubik white-100 fw-600 fs-40 text-center">HACKATHON</h1>
+				<h2 class="title2 rubik white-100 fw-300 fs-30 text-center">with Lewis</h2>
+			</a>
+			<div class="nav-items">
+				<a class="scp white-90 fw-400 fs-20 text-center underline" href="learnmore.html">Learn More</a>
+				<a class="scp white-90 fw-400 fs-20 text-center underline" href="rules.html">Rules</a>
+				<a class="scp white-90 fw-600 fs-20 text-center underline" href="index.html">Sign Up</a>
+			</div>
+		</nav>
+	</div>
+	<div class="content align-center">
+		<div class="section">
+			<h3 class="section-title rubik white-90 fw-600 fs-30 text-center">Rules</h3>
+			<p class="section-body scp white-90 fw-400 fs-20 text-left">
+				rules
+			</p>
+			<h6 class="section-subtitle scp white-90 fw-600 fs-24 text-left">rule 1</h6>
+			<p class="section-body scp white-90 fw-400 fs-20 text-left">
+				explaining rule 1
+			</p>
+			<ul class="section-list">
+				<li class="list-item scp white-90 fw-400 fs-20 text-left">
+					example 1 for explanation
+				</li>
+				<li class="list-item scp white-90 fw-400 fs-20 text-left">
+					example 2 for explanation
+				</li>
+			</ul>
+			<h6 class="section-subtitle scp white-90 fw-600 fs-24 text-left">rule 2</h6>
+			<h6 class="section-subtitle scp white-90 fw-600 fs-24 text-left">rule ...</h6>
+		</div>
+	</div>
+	<div class="footer-section">
+		<div class="lewis">
+			<p class="scp blue fw-500 fs-20 align-left">Coding with Lewis</p>
+			<a href="https://www.youtube.com/@CodingwithLewis">
+				<img class="icon" src="./design files/youtube.svg" alt="youtube channel">
+			</a>
+			<a href="https://discord.com/invite/5uw4eCQf6Z">
+				<img class="icon" src="./design files/discord.svg" alt="discord server">
+			</a>
+			<a href="https://x.com/LewisMenelaws">
+				<img class="icon" src="./design files/x.svg" alt="x">
+			</a>
+			<a href="https://www.instagram.com/lewismenelaws/">
+				<img class="icon" src="./design files/instagram.svg" alt="instagram">
+			</a>
+		</div>
+	</div>
+</body>
+
+</html>
+
+<style>
+	html {
+		width: 100% !important;
+		background-color: #0A0A0A !important;
+	}
+
+	.navbar {
+		/* this is the outer part, pos needs to stay here */
+		position: sticky;
+		top: 0;
+		/* source: https://stackoverflow.com/a/23752288 */
+		text-align: center;
+		padding-bottom: 1px;
+		background:
+			linear-gradient(to right,
+				#0F1B57 40%,
+				#0F248A 60%,
+				#6680FF 98%,
+				#0F1B57 100%) left bottom #00000000 no-repeat;
+		background-size: 100% 1px;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+		padding: 0.8rem 1.6rem;
+		z-index: 1000;
+		background: linear-gradient(to right, #0F1B57 10%, #0A0A0A42 90%) !important;
+		border-radius: 1rem;
+		backdrop-filter: blur(7px);
+		-webkit-backdrop-filter: blur(7px);
+	}
+
+	.nav-title {
+		display: flex;
+		flex-direction: row;
+		gap: 0.5rem;
+		align-items: end;
+	}
+
+	.nav-items {
+		display: flex;
+		flex-direction: row;
+		gap: 2rem;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+	}
+
+	.underline {
+		text-decoration: underline;
+	}
+
+	.section {
+		margin: 1rem auto;
+	}
+
+	.section-title {
+		margin: 1rem 0;
+	}
+
+	.section-subtitle {
+		margin-top: 0.5rem;
+	}
+
+	.section-body {
+		margin: 0.5rem 0;
+	}
+
+	.section-list {
+		margin: 0.5rem 0;
+	}
+
+	.list-item {
+		margin: 0.3rem 0;
+	}
+
+	.footer-section {
+		/* part of footer */
+		bottom: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.lewis {
+		/* part of footer */
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	.icon {
+		/* part of footer */
+		width: 40%;
+		display: inline-block;
+		margin: auto;
+		width: clamp(1.5rem, 1.5rem + 0.5vw, 2.5rem);
+		height: clamp(1.5rem, 1.5rem + 0.5vw, 2.5rem);
+		margin-left: clamp(0.5rem, 0.5rem + 0.5vw, 1rem);
+	}
+
+	@media (max-width: 60rem) {
+		nav {
+			display: flex;
+			justify-content: space-around;
+			flex-direction: column !important;
+			padding: 0.8rem 0.5rem;
+		}
+
+		.content {
+			width: 95%;
+			margin: 0 auto;
+		}
+	}
+</style>

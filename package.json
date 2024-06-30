@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "npm run dev": "npx tailwindcss -i ./style.css -o ./global.css --watch",
+    "npm run build": "npx tailwindcss -i ./style.css -o ./global.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}

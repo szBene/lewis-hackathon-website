@@ -180,6 +180,7 @@ nav {
 	gap: 2rem;
 }
 
+/* content stuff */
 .content {
 	display: flex;
 	flex-direction: column;
@@ -188,6 +189,26 @@ nav {
 	width: clamp(80%, 70% + 10vw, 100%);
 	margin: 1.2rem auto;
 	margin-top: 6rem;
+}
+
+.section {
+	margin: 0.5rem auto;
+}
+
+.section-title {
+	margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+	margin-top: 0.5rem;
+}
+
+.section-body {
+	margin-bottom: 0.5rem;
+}
+
+.list-item {
+	margin-bottom: 0.5rem;
 }
 
 .footer-section {
@@ -216,7 +237,7 @@ nav {
 	margin-left: clamp(0.5rem, 0.5rem + 0.5vw, 1rem);
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 52rem) {
 	nav {
 		display: flex;
 		justify-content: space-around;

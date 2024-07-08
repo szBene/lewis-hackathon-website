@@ -5,9 +5,30 @@
 @tailwind utilities;
 
 html {
-	scrollbar-color: #6680FF #0A0A0A;
+	scrollbar-color: #6680ff #0A0A0A;
 	background-color: #0A0A0A !important;
 	width: 100% !important;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+	color: #99AAFF;
+	background: #0F248A;
+}
+
+::-moz-selection {
+	color: #99AAFF;
+	background: #0F248A;
+}
+
+a::selection {
+	color: #6680ff;
+}
+
+a::-moz-selection {
+	color: #6680ff;
 }
 
 h1,
@@ -20,13 +41,12 @@ a,
 p {
 	margin: 0;
 	padding: 0;
+	line-height: 1.3;
 }
 
-a,
-p {
-	line-height: 1.2;
-	letter-spacing: -0.5px;
-	text-decoration: none;
+ul>li {
+	list-style-type: disc;
+	list-style-position: inside;
 }
 
 button {
@@ -36,11 +56,11 @@ button {
 	border-radius: 2.5rem;
 	padding: 0.75rem 1.5rem;
 	margin: 0.62rem;
-	box-shadow: black 0 0 4.8rem;
+	box-shadow: black 0 0 2rem;
 }
 
 button:hover {
-	box-shadow: inset #99aaff42 0 0 1rem;
+	box-shadow: inset #99aaff42 0 0 2rem;
 }
 
 .rubik {

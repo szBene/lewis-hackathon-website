@@ -582,12 +582,20 @@ video {
   display: list-item;
 }
 
+.hidden{
+  display: none;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
 
 .w-full{
   width: 100%;
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col{
@@ -658,6 +666,14 @@ video {
   font-weight: 600;
 }
 
+.font-extrabold{
+  font-weight: 800;
+}
+
+.font-normal{
+  font-weight: 400;
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -665,6 +681,10 @@ video {
 
 .underline{
   text-decoration-line: underline;
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -815,6 +835,7 @@ button:hover {
   /* source: https://stackoverflow.com/a/23752288 */
   text-align: center;
   padding-bottom: 1.5px;
+  /* bottom border gradient */
   background:
 		linear-gradient(to right,
 			#0F1B57 40%,
@@ -832,6 +853,7 @@ nav {
   flex-direction: row;
   padding: 0.8rem 1.6rem;
   z-index: 1000;
+  /* background gradient */
   background: linear-gradient(to right, #0F1B57 10%, #0A0A0A42 90%) !important;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
@@ -911,15 +933,8 @@ nav {
 }
 
 @media (max-width: 52rem) {
-  nav {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column !important;
-    padding: 0.8rem 0.5rem;
-    background: linear-gradient(to right, #0A0A0A42 0%, #0F1B57 30%, #0F1B57 70%, #0A0A0A42 100%) !important;
-  }
-
   .navbar {
+    /* bottom border gradient */
     background:
 			linear-gradient(to right,
 				#0F1B57 0%,
@@ -929,6 +944,15 @@ nav {
 				#0F248A 80%,
 				#0F1B57 100%) left bottom #00000000 no-repeat;
     background-size: 100% 5px !important;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column !important;
+    padding: 0.8rem 0.5rem;
+    /* background gradient */
+    background: linear-gradient(to right, #0A0A0A42 0%, #0F1B57 30%, #0F1B57 70%, #0A0A0A42 100%) !important;
   }
 
   .content {

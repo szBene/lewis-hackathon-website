@@ -143,6 +143,7 @@ button:hover {
 	/* source: https://stackoverflow.com/a/23752288 */
 	text-align: center;
 	padding-bottom: 1.5px;
+	/* bottom border gradient */
 	background:
 		linear-gradient(to right,
 			#0F1B57 40%,
@@ -160,6 +161,7 @@ nav {
 	flex-direction: row;
 	padding: 0.8rem 1.6rem;
 	z-index: 1000;
+	/* background gradient */
 	background: linear-gradient(to right, #0F1B57 10%, #0A0A0A42 90%) !important;
 	backdrop-filter: blur(7px);
 	-webkit-backdrop-filter: blur(7px);
@@ -238,15 +240,8 @@ nav {
 }
 
 @media (max-width: 52rem) {
-	nav {
-		display: flex;
-		justify-content: space-around;
-		flex-direction: column !important;
-		padding: 0.8rem 0.5rem;
-		background: linear-gradient(to right, #0A0A0A42 0%, #0F1B57 30%, #0F1B57 70%, #0A0A0A42 100%) !important;
-	}
-
 	.navbar {
+		/* bottom border gradient */
 		background:
 			linear-gradient(to right,
 				#0F1B57 0%,
@@ -257,6 +252,17 @@ nav {
 				#0F1B57 100%) left bottom #00000000 no-repeat;
 		background-size: 100% 5px !important;
 	}
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column !important;
+		padding: 0.8rem 0.5rem;
+
+		/* background gradient */
+		background: linear-gradient(to right, #0A0A0A42 0%, #0F1B57 30%, #0F1B57 70%, #0A0A0A42 100%) !important;
+	}
+
 
 	.content {
 		margin: 0.6rem auto;

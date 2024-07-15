@@ -566,6 +566,10 @@ video {
   position: relative;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .mt-12{
   margin-top: 3rem;
 }
@@ -610,12 +614,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
 .gap-12{
   gap: 3rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .p-4{
@@ -761,6 +765,10 @@ button:hover {
 
 .blue {
   color: #6680FF !important;
+}
+
+.fs-16 {
+  font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem) !important;
 }
 
 .fs-20 {

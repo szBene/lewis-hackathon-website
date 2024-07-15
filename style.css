@@ -83,6 +83,10 @@ button:hover {
 	color: #6680FF !important;
 }
 
+.fs-16 {
+	font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem) !important;
+}
+
 .fs-20 {
 	font-size: clamp(1rem, 1rem + 0.5vw, 1.875rem) !important;
 }

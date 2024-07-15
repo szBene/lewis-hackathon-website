@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="global.css">
 </head>
 
-<body>
+<body class="min-h-screen flex flex-col items-center justify-between content-between">
 	<div class="navbar">
 		<nav>
 			<a class="nav-title" href="index.html">
@@ -23,46 +23,24 @@
 			</div>
 		</nav>
 	</div>
-	<div class="content align-center">
+	<div class="content align-left">
 		<div class="section">
 			<h3 class="section-title rubik white-90 font-semibold fs-30 text-left">Rules</h3>
-			<p class="section-body scp white-90  fs-20 text-left">
-				Breaking the rules will result in disqualification of you and your team. Please read them carefully and
-				make sure you understand. If you have any questions, feel free to ask.
+			<p class="section-body scp white-90 font-semibold fs-20 text-left">
+				Breaking the rules will result in disqualification of you and your team. Please read carefully and
+				make sure you understand them. If you have any questions, feel free to ask.
 			</p>
 		</div>
-		<div class="section">
-			<h3 class="section-title scp white-90 font-bold fs-20 text-left">Team Guidelines:</h3>
-			<ul class="section-list">
-				<li class="list-item scp white-90  fs-20 text-left">
-					Each team can have a maximum of three members. Individual participation is also welcome.
-					example 1 for explanation
-				</li>
-				<li class="list-item scp white-90  fs-20 text-left">
-					Each participant can be a member of only one team.
-				</li>
-				<li class="list-item scp white-90  fs-20 text-left">
-					Teams can be formed before or during the hackathon.
-				</li>
-				<li class="list-item scp white-90  fs-20 text-left">
-					Changing teams is not allowed once registered.
-				</li>
-				<li class="list-item scp white-90  fs-20 text-left">
-					Although not necessary, it is highly recommended to be a part of the
-					<a class="underline white-90" href="https://discord.com/invite/5uw4eCQf6Z">Discord Community</a>
-					of Lewis Menelaws as all of our communication will be conducted there first.
-				</li>
-			</ul>
-		</div>
-		<div class="section">
-			<h3 class="section-title scp white-90 font-bold fs-20 text-left">Project Guidelines:</h3>
+		<details class="section project accordion" open>
+
+			<summary class="section-title scp white-90 font-bold fs-20 text-left">Project Guidelines</summary>
 			<ul class="section-list">
 				<li class="list-item scp white-90  fs-20 text-left">
 					All code, design, and assets must be created during the hackathon.
 				</li>
 				<li class="list-item scp white-90  fs-20 text-left">
-					Utilization of third-party libraries and services is allowed as long as they are freely available to
-					other participants and do not require any form of payment (ex: card).
+					Utilization of third-party libraries and services is allowed as long as they are freely
+					available to other participants and do not require any form of payment (ex: card).
 				</li>
 				<li class="list-item scp white-90  fs-20 text-left">
 					You are free to use any technology to work on your project.
@@ -78,26 +56,55 @@
 					Web applications are encouraged, although all kinds of entries are welcome.
 				</li>
 			</ul>
-		</div>
-		<div class="section">
-			<h3 class="section-title scp white-90 font-bold fs-20 text-left">Submission Guidelines:</h3>
+		</details>
+		<details class="section submission accordion">
+
+			<summary class="section-title scp white-90 font-bold fs-20 text-left">Submission Guidelines</summary>
 			<ul class="section-list">
 				<li class="list-item scp white-90  fs-20 text-left">
 					All your work must be open-sourced on GitHub.
 				</li>
 				<li class="list-item scp white-90  fs-20 text-left">
 					You must include presentable screenshots of your project along with an optional (but recommended)
-					demo video.
+					demo video, as well as a detailed setup guide (if your project requires setup).
 				</li>
 				<li class="list-item scp white-90  fs-20 text-left">
 					Submit your project by the deadline; any submissions made after the deadline will NOT be evaluated.
 					Only the latest submission will be considered.
 				</li>
 			</ul>
-		</div>
-		<p class="section-body scp white-90  fs-20 text-left">
+		</details>
+		<details class="section team accordion">
+
+			<summary class="section-title scp white-90 font-bold fs-20 text-left">Team and Participation Guidelines
+			</summary>
+			<ul class="section-list">
+				<li class="list-item scp white-90  fs-20 text-left">
+					Each team can have a maximum of three members. Individual participation is also welcome.
+				</li>
+				<li class="list-item scp white-90  fs-20 text-left">
+					Each participant can be a member of only one team.
+				</li>
+				<li class="list-item scp white-90  fs-20 text-left">
+					Teams can be formed before or during the hackathon.
+				</li>
+				<li class="list-item scp white-90  fs-20 text-left">
+					Changing teams is not allowed once registered.
+				</li>
+				<li class="list-item scp white-90  fs-20 text-left">
+					Although not necessary, it is highly recommended to be a part of Lewis Menelaws'
+					<a class="underline white-90" href="https://discord.com/invite/5uw4eCQf6Z">Discord Community</a>
+					as all of our communication will be conducted there first.
+				</li>
+			</ul>
+		</details>
+		<p class="section-body scp white-90 font-light fs-16 text-left">
 			We reserve the right to update (refine) the rules at any time. If we introduce major changes, we will notify
-			you on our Discord server.
+			you on our
+			<a class="underline white-90" style="text-decoration-thickness: 0.5px;"
+				href="https://discord.com/invite/5uw4eCQf6Z">
+				Discord server
+			</a>.
 		</p>
 	</div>
 	<div class="footer-section">
@@ -120,3 +127,17 @@
 </body>
 
 </html>
+
+<style>
+	.accordion {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+		border-bottom: 1px solid #0F1B57;
+	}
+
+	summary {
+		cursor: pointer;
+	}
+</style>

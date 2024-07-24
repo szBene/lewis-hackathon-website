@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "npm run dev": "npx tailwindcss -i ./style.css -o ./global.css --watch",
-    "npm run build": "npx tailwindcss -i ./style.css -o ./global.css --minify"
+    "dev": "npx tailwindcss -i ./style.css -o ./global.css --watch",
+    "build": "npx tailwindcss -i ./style.css -o ./global.css --minify"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.4"

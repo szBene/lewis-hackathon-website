@@ -84,27 +84,27 @@ button:hover {
 }
 
 .fs-16 {
-	font-size: clamp(1rem, 1rem + 0.5vw, 1.5rem) !important;
+	font-size: clamp(1rem, 1rem + 0.5dvw, 1.5rem) !important;
 }
 
 .fs-20 {
-	font-size: clamp(1rem, 1rem + 0.5vw, 1.875rem) !important;
+	font-size: clamp(1rem, 1rem + 0.5dvw, 1.875rem) !important;
 }
 
 .fs-30 {
-	font-size: clamp(1.5rem, 1.5rem + 0.5vw, 2.85rem) !important;
+	font-size: clamp(1.5rem, 1.5rem + 0.5dvw, 2.85rem) !important;
 }
 
 .fs-40 {
-	font-size: clamp(2rem, 2rem + 0.5vw, 3.75rem) !important;
+	font-size: clamp(2rem, 2rem + 0.5dvw, 3.75rem) !important;
 }
 
 .fs-56 {
-	font-size: clamp(2.8rem, 2.8rem + 0.5vw, 5.25rem) !important;
+	font-size: clamp(2.8rem, 2.8rem + 0.5dvw, 5.25rem) !important;
 }
 
 .fs-120 {
-	font-size: clamp(7rem, 7rem + 0.5vw, 11.25rem) !important;
+	font-size: clamp(7rem, 7rem + 0.5dvw, 11.25rem) !important;
 }
 
 .align-center {
@@ -192,7 +192,7 @@ nav {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: clamp(80%, 70% + 10vw, 100%);
+	width: clamp(80%, 70% + 10dvw, 100%);
 	margin: 1.2rem auto;
 	margin-top: 6rem;
 }
@@ -238,9 +238,9 @@ nav {
 	width: 40%;
 	display: inline-block;
 	margin: auto;
-	width: clamp(1.5rem, 1.5rem + 0.5vw, 2.5rem);
-	height: clamp(1.5rem, 1.5rem + 0.5vw, 2.5rem);
-	margin-left: clamp(0.5rem, 0.5rem + 0.5vw, 1rem);
+	width: clamp(1.5rem, 1.5rem + 0.5dvw, 2.5rem);
+	height: clamp(1.5rem, 1.5rem + 0.5dvw, 2.5rem);
+	margin-left: clamp(0.5rem, 0.5rem + 0.5dvw, 1rem);
 }
 
 @media (max-width: 52rem) {

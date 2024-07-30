@@ -267,6 +267,9 @@ nav {
 		background: linear-gradient(to right, #0A0A0A42 0%, #0F1B57 30%, #0F1B57 70%, #0A0A0A42 100%) !important;
 	}
 
+	.nav-items {
+		gap: 1rem;
+	}
 
 	.content {
 		margin: 0.6rem auto;

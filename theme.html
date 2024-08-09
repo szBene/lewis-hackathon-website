@@ -5,6 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Theme | Hackathon with Lewis</title>
         <link rel="stylesheet" href="global.css" />
+        <style>
+            .examples-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            @media (min-width: 768px) {
+                .examples-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            .example-item {
+                background-color: #f0f0f0;
+                padding: 16px;
+                border-radius: 8px;
+                text-align: center;
+            }
+        </style>
     </head>
 
     <body
@@ -72,6 +92,17 @@
                     >
                 </p>
                 <p class="section-body scp white-90 fs-20">Some Examples:</p>
+                <div class="examples-grid">
+                    <div class="example-item">
+                        Example 1: Description of the first example.
+                    </div>
+                    <div class="example-item">
+                        Example 2: Description of the second example.
+                    </div>
+                    <div class="example-item">
+                        Example 3: Description of the third example.
+                    </div>
+                </div>
             </div>
         </div>
 

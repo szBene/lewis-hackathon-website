@@ -25,135 +25,13 @@
 			<a class="scp white-90 fs-20 text-center underline" href="learnmore.html">Learn More</a>
 			<a class="scp white-90 fs-20 text-center underline" href="rules.html">Rules</a>
 			<a class="scp white-90 fs-20 text-center underline" href="theme.html">Theme</a>
-			<a class="scp white-90 font-semibold fs-20 text-center underline" target="_blank"
+			<a class="scp white-90 fs-20 text-center underline" target="_blank"
 				href="https://forms.gle/sDpNYnAcsryDDShx8">Sign Up</a>
+			<a class="scp white-90 font-semibold fs-20 text-center underline" target="_blank"
+				href="https://forms.gle/sDpNYnAcsryDDShx8">Submit</a>
 		</div>
 	</nav>
 </div>
-
-<style>
-	/* CSS from global.css is pasted here: */
-	.navbar {
-		/* this is the outer part, position needs to stay here */
-		width: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		text-align: center;
-		padding-bottom: 1.5px;
-		/* bottom border gradient */
-		background: linear-gradient(to right, #0F1B57 40%, #0F248A 60%, #6680FF 98%, #0F1B57 100%) left bottom #00000000 no-repeat;
-		background-size: 100% 5px;
-		transition: height 0.3s ease;
-		/* Add transition for smooth opening */
-		overflow: hidden;
-		/* Hide overflowing content when collapsed */
-	}
-
-	nav {
-		/* part of navbar */
-		height: 100%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-direction: row;
-		padding: 0.8rem 1.6rem;
-		z-index: 1000;
-		background: linear-gradient(to right, #0F1B57 10%, #0A0A0A42 90%) !important;
-		backdrop-filter: blur(7px);
-		-webkit-backdrop-filter: blur(7px);
-	}
-
-	.nav-title {
-		/* part of navbar */
-		display: flex;
-		flex-direction: row;
-		gap: 0.5rem;
-		align-items: end;
-	}
-
-	.nav-items {
-		/* part of navbar */
-		display: flex;
-		flex-direction: row;
-		gap: 2rem;
-	}
-
-	/* Hamburger menu styles */
-	.hamburger {
-		display: none;
-	}
-
-	.hamburger span {
-		width: 25px;
-		height: 3px;
-		background: #fff;
-		border-radius: 2px;
-	}
-
-	/* Media query for mobile view */
-	@media (max-width: 52rem) {
-		.nav-items {
-			display: none;
-		}
-
-		nav {
-			align-items: flex-end;
-		}
-
-		.nav-items.show {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-end;
-			margin-top: 1rem;
-			gap: 1rem;
-		}
-
-		.fs-20 {
-			font-size: clamp(1.2rem, 1.2rem + 0.5dvw, 2rem) !important;
-		}
-
-		.title-group {
-			/* part of navbar */
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-			margin: 0;
-			padding: 0;
-			width: 100%;
-		}
-
-		.title-group .nav-title {
-			/* part of navbar */
-			justify-self: flex-start;
-		}
-
-		.title-group .hamburger {
-			justify-self: flex-end;
-			display: flex;
-			flex-direction: column;
-			cursor: pointer;
-			gap: 0.5rem;
-			margin-right: 1rem;
-		}
-
-		@media (max-width: 28rem) {
-			.nav-title {
-				/* part of navbar */
-				display: flex;
-				flex-direction: column;
-				gap: 0;
-				align-items: flex-start;
-			}
-
-			.nav-title h1,
-			.nav-title h2 {
-				margin: -0.4rem 0;
-			}
-		}
-	}
-</style>
 
 <script>
 	document.getElementById("hamburger").addEventListener("click", function () {

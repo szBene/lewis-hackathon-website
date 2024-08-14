@@ -155,10 +155,13 @@ button:hover {
 			#6680FF 98%,
 			#0F1B57 100%) left bottom #00000000 no-repeat;
 	background-size: 100% 5px;
+	overflow: hidden;
+	/* Hide overflowing content when collapsed */
 }
 
 nav {
 	/* part of navbar */
+	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -184,6 +187,88 @@ nav {
 	display: flex;
 	flex-direction: row;
 	gap: 2rem;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+	display: none;
+}
+
+.hamburger span {
+	width: 25px;
+	height: 3px;
+	background: #fff;
+	border-radius: 2px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 60rem) {
+	.nav-items {
+		display: none;
+	}
+
+	.content {
+		margin: 0.6rem auto;
+		margin-top: 7rem;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.nav-items.show {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: 1rem;
+		gap: 1rem;
+	}
+
+	.fs-20 {
+		font-size: clamp(1.2rem, 1.2rem + 0.5dvw, 2rem) !important;
+	}
+
+	.title-group {
+		/* part of navbar */
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.title-group .nav-title {
+		/* part of navbar */
+		justify-self: flex-start;
+	}
+
+	.title-group .hamburger {
+		justify-self: flex-end;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+		gap: 0.5rem;
+		margin-right: 1rem;
+	}
+
+	@media (max-width: 28rem) {
+		.nav-title {
+			/* part of navbar */
+			display: flex;
+			flex-direction: column;
+			gap: 0;
+			align-items: flex-start;
+		}
+
+		.nav-title h1,
+		.nav-title h2 {
+			margin: -0.4rem 0;
+		}
+	}
 }
 
 /* content stuff */
@@ -243,9 +328,8 @@ nav {
 	margin-left: clamp(0.5rem, 0.5rem + 0.5dvw, 1rem);
 }
 
-@media (max-width: 52rem) {
+/* @media (max-width: 52rem) {
 	.navbar {
-		/* bottom border gradient */
 		background:
 			linear-gradient(to right,
 				#0F1B57 0%,
@@ -262,17 +346,6 @@ nav {
 		justify-content: space-around;
 		flex-direction: column !important;
 		padding: 0.8rem 0.5rem;
-
-		/* background gradient */
 		background: linear-gradient(to right, #0A0A0A42 0%, #0F1B57 30%, #0F1B57 70%, #0A0A0A42 100%) !important;
 	}
-
-	.nav-items {
-		gap: 1rem;
-	}
-
-	.content {
-		margin: 0.6rem auto;
-		margin-top: 7rem;
-	}
-}
+} */

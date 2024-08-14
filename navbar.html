@@ -19,3 +19,53 @@
 		</div>
 	</nav>
 </div>
+
+<style>
+	.navbar {
+		/* this is the outer part, position needs to stay here */
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		/* source: https://stackoverflow.com/a/23752288 */
+		text-align: center;
+		padding-bottom: 1.5px;
+		/* bottom border gradient */
+		background:
+			linear-gradient(to right,
+				#0F1B57 40%,
+				#0F248A 60%,
+				#6680FF 98%,
+				#0F1B57 100%) left bottom #00000000 no-repeat;
+		background-size: 100% 5px;
+	}
+
+	nav {
+		/* part of navbar */
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+		padding: 0.8rem 1.6rem;
+		z-index: 1000;
+		/* background gradient */
+		background: linear-gradient(to right, #0F1B57 10%, #0A0A0A42 90%) !important;
+		backdrop-filter: blur(7px);
+		-webkit-backdrop-filter: blur(7px);
+	}
+
+	.nav-title {
+		/* part of navbar */
+		display: flex;
+		flex-direction: row;
+		gap: 0.5rem;
+		align-items: end;
+	}
+
+	.nav-items {
+		/* part of navbar */
+		display: flex;
+		flex-direction: row;
+		gap: 2rem;
+	}
+</style>

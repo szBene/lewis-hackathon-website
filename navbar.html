@@ -1,19 +1,19 @@
-<!-- 
- this is a template for the navbar of the website
- the styles are in global.css, youll need to include that in the page head
- update this snippet if you modify it on an other page
- -->
-
 <div class="navbar">
 	<nav>
 		<a class="nav-title" href="index.html">
 			<h1 class="title1 rubik text-white font-semibold fs-40 text-center">HACKATHON</h1>
 			<h2 class="title2 rubik text-white font-light fs-30 text-center">with Lewis</h2>
 		</a>
-		<div class="nav-items">
-			<a class="scp white-90  fs-20 text-center underline" href="learnmore.html">Learn More</a>
-			<a class="scp white-90  fs-20 text-center underline" href="rules.html">Rules</a>
-			<a class="scp white-90  fs-20 text-center underline" href="theme.html">Theme</a>
+		<!-- Hamburger icon -->
+		<div class="hamburger" id="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="nav-items" id="nav-items">
+			<a class="scp white-90 fs-20 text-center underline" href="learnmore.html">Learn More</a>
+			<a class="scp white-90 fs-20 text-center underline" href="rules.html">Rules</a>
+			<a class="scp white-90 fs-20 text-center underline" href="theme.html">Theme</a>
 			<a class="scp white-90 font-semibold fs-20 text-center underline" target="_blank"
 				href="https://forms.gle/sDpNYnAcsryDDShx8">Sign Up</a>
 		</div>
@@ -21,22 +21,17 @@
 </div>
 
 <style>
+    /* CSS from global.css is pasted here: */
 	.navbar {
 		/* this is the outer part, position needs to stay here */
 		width: 100%;
 		position: fixed;
 		top: 0;
 		left: 0;
-		/* source: https://stackoverflow.com/a/23752288 */
 		text-align: center;
 		padding-bottom: 1.5px;
 		/* bottom border gradient */
-		background:
-			linear-gradient(to right,
-				#0F1B57 40%,
-				#0F248A 60%,
-				#6680FF 98%,
-				#0F1B57 100%) left bottom #00000000 no-repeat;
+		background: linear-gradient(to right, #0F1B57 40%, #0F248A 60%, #6680FF 98%, #0F1B57 100%) left bottom #00000000 no-repeat;
 		background-size: 100% 5px;
 	}
 
@@ -48,7 +43,6 @@
 		flex-direction: row;
 		padding: 0.8rem 1.6rem;
 		z-index: 1000;
-		/* background gradient */
 		background: linear-gradient(to right, #0F1B57 10%, #0A0A0A42 90%) !important;
 		backdrop-filter: blur(7px);
 		-webkit-backdrop-filter: blur(7px);
@@ -68,4 +62,50 @@
 		flex-direction: row;
 		gap: 2rem;
 	}
+
+	/* Hamburger menu styles */
+	.hamburger {
+		display: none;
+		flex-direction: column;
+		cursor: pointer;
+		gap: 5px;
+	}
+
+	.hamburger span {
+		width: 25px;
+		height: 3px;
+		background: #fff;
+		border-radius: 2px;
+	}
+
+	/* Media query for mobile view */
+	@media (max-width: 768px) {
+		.nav-items {
+			display: none;
+			flex-direction: column;
+			gap: 1rem;
+			position: absolute;
+			top: 60px;
+			right: 10px;
+			background: #0F1B57;
+			padding: 1rem;
+			border-radius: 8px;
+			box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+		}
+
+		.nav-items.show {
+			display: flex;
+		}
+
+		.hamburger {
+			display: flex;
+		}
+	}
 </style>
+
+<script>
+    document.getElementById("hamburger").addEventListener("click", function () {
+        var navItems = document.getElementById("nav-items");
+        navItems.classList.toggle("show");
+    });
+</script>

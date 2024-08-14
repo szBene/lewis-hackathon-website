@@ -9,18 +9,27 @@
 </head>
 
 <body>
-	<div class="navbar">
+	<div class="navbar" id="navbar">
 		<nav>
-			<a class="nav-title" href="index.html">
-				<h1 class="title1 rubik text-white font-semibold fs-40 text-center">HACKATHON</h1>
-				<h2 class="title2 rubik text-white font-light fs-30 text-center">with Lewis</h2>
-			</a>
-			<div class="nav-items">
-				<a class="scp white-90  fs-20 text-center underline" href="learnmore.html">Learn More</a>
-				<a class="scp white-90  fs-20 text-center underline" href="rules.html">Rules</a>
-				<a class="scp white-90  fs-20 text-center underline" href="theme.html">Theme</a>
-				<a class="scp white-90 font-semibold fs-20 text-center underline" target="_blank"
+			<div class="title-group">
+				<a class="nav-title" href="index.html">
+					<h1 class="title1 rubik text-white font-semibold fs-40 text-center">HACKATHON</h1>
+					<h2 class="title2 rubik text-white font-light fs-30 text-center">with Lewis</h2>
+				</a>
+				<div class="hamburger" id="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="nav-items" id="nav-items">
+				<a class="scp white-90 fs-20 text-center underline" href="learnmore.html">Learn More</a>
+				<a class="scp white-90 fs-20 text-center underline" href="rules.html">Rules</a>
+				<a class="scp white-90 fs-20 text-center underline" href="theme.html">Theme</a>
+				<a class="scp white-90 fs-20 text-center underline" target="_blank"
 					href="https://forms.gle/sDpNYnAcsryDDShx8">Sign Up</a>
+				<a class="scp white-90 font-semibold fs-20 text-center underline" target="_blank"
+					href="https://forms.gle/sDpNYnAcsryDDShx8">Submit</a>
 			</div>
 		</nav>
 	</div>
@@ -170,6 +179,8 @@
 </body>
 
 </html>
+
+<script src="./navbarToggle.js"></script>
 
 <style>
 	.accordion {

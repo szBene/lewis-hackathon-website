@@ -95,17 +95,22 @@
 	@media (max-width: 52rem) {
 		.nav-items {
 			display: none;
-			flex-direction: column;
-			gap: 1rem;
-			position: static;
-			background: #0F1B57;
-			padding: 1rem;
-			border-radius: 8px;
-			box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 		}
 
-		.navbar.expand {
-			height: 10rem;
+		nav {
+			align-items: flex-end;
+		}
+
+		.nav-items.show {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			margin-top: 1rem;
+			gap: 1rem;
+		}
+
+		.fs-20 {
+			font-size: clamp(1.2rem, 1.2rem + 0.5dvw, 2rem) !important;
 		}
 
 		.title-group {

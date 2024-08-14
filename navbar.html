@@ -1,48 +1,62 @@
-<div class="navbar">
+<div class="navbar" id="navbar">
 	<nav>
-		<a class="nav-title" href="index.html">
-			<h1 class="title1 rubik text-white font-semibold fs-40 text-center">HACKATHON</h1>
-			<h2 class="title2 rubik text-white font-light fs-30 text-center">with Lewis</h2>
-		</a>
-		<!-- Hamburger icon -->
-		<div class="hamburger" id="hamburger">
-			<span></span>
-			<span></span>
-			<span></span>
+		<div class="title-group">
+			<a class="nav-title" href="index.html">
+				<h1 class="title1 rubik text-white font-semibold fs-40 text-center">HACKATHON</h1>
+				<h2 class="title2 rubik text-white font-light fs-30 text-center">with Lewis</h2>
+			</a>
+			<div class="hamburger" id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</div>
 		<div class="nav-items" id="nav-items">
 			<a class="scp white-90 fs-20 text-center underline" href="learnmore.html">Learn More</a>
 			<a class="scp white-90 fs-20 text-center underline" href="rules.html">Rules</a>
 			<a class="scp white-90 fs-20 text-center underline" href="theme.html">Theme</a>
-			<a class="scp white-90 font-semibold fs-20 text-center underline" target="_blank"
+			<a class="scp white-90 fs-20 text-center underline" target="_blank"
 				href="https://forms.gle/sDpNYnAcsryDDShx8">Sign Up</a>
+			<a class="scp white-90 font-semibold fs-20 text-center underline" target="_blank"
+				href="https://forms.gle/9bA1BEmaV7VvrZ2z8">Submit</a>
 		</div>
 	</nav>
 </div>
 
 <style>
-    /* CSS from global.css is pasted here: */
+	/* CSS from global.css is pasted here: */
+
 	.navbar {
 		/* this is the outer part, position needs to stay here */
 		width: 100%;
 		position: fixed;
 		top: 0;
 		left: 0;
+		/* source: https://stackoverflow.com/a/23752288 */
 		text-align: center;
 		padding-bottom: 1.5px;
 		/* bottom border gradient */
-		background: linear-gradient(to right, #0F1B57 40%, #0F248A 60%, #6680FF 98%, #0F1B57 100%) left bottom #00000000 no-repeat;
+		background:
+			linear-gradient(to right,
+				#0F1B57 40%,
+				#0F248A 60%,
+				#6680FF 98%,
+				#0F1B57 100%) left bottom #00000000 no-repeat;
 		background-size: 100% 5px;
+		overflow: hidden;
+		/* Hide overflowing content when collapsed */
 	}
 
 	nav {
 		/* part of navbar */
+		height: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		flex-direction: row;
 		padding: 0.8rem 1.6rem;
 		z-index: 1000;
+		/* background gradient */
 		background: linear-gradient(to right, #0F1B57 10%, #0A0A0A42 90%) !important;
 		backdrop-filter: blur(7px);
 		-webkit-backdrop-filter: blur(7px);
@@ -66,9 +80,6 @@
 	/* Hamburger menu styles */
 	.hamburger {
 		display: none;
-		flex-direction: column;
-		cursor: pointer;
-		gap: 5px;
 	}
 
 	.hamburger span {
@@ -79,33 +90,74 @@
 	}
 
 	/* Media query for mobile view */
-	@media (max-width: 768px) {
+	@media (max-width: 60rem) {
 		.nav-items {
 			display: none;
+		}
+
+		.content {
+			margin: 0.6rem auto;
+			margin-top: 7rem;
+		}
+
+		nav {
+			display: flex;
 			flex-direction: column;
-			gap: 1rem;
-			position: absolute;
-			top: 60px;
-			right: 10px;
-			background: #0F1B57;
-			padding: 1rem;
-			border-radius: 8px;
-			box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+			align-items: flex-end;
 		}
 
 		.nav-items.show {
 			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			margin-top: 1rem;
+			gap: 1rem;
 		}
 
-		.hamburger {
+		.fs-20 {
+			font-size: clamp(1.2rem, 1.2rem + 0.5dvw, 2rem) !important;
+		}
+
+		.title-group {
+			/* part of navbar */
 			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+
+		.title-group .nav-title {
+			/* part of navbar */
+			justify-self: flex-start;
+		}
+
+		.title-group .hamburger {
+			justify-self: flex-end;
+			display: flex;
+			flex-direction: column;
+			cursor: pointer;
+			gap: 0.5rem;
+			margin-right: 1rem;
+		}
+
+		@media (max-width: 28rem) {
+			.nav-title {
+				/* part of navbar */
+				display: flex;
+				flex-direction: column;
+				gap: 0;
+				align-items: flex-start;
+			}
+
+			.nav-title h1,
+			.nav-title h2 {
+				margin: -0.4rem 0;
+			}
 		}
 	}
 </style>
 
-<script>
-    document.getElementById("hamburger").addEventListener("click", function () {
-        var navItems = document.getElementById("nav-items");
-        navItems.classList.toggle("show");
-    });
-</script>
+<script src="./navbarToggle.js"></script>

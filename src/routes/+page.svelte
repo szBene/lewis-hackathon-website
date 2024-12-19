@@ -2,7 +2,7 @@
 	import '$lib/style/app.css';
 </script>
 
-<div class="flex min-h-screen w-full flex-col items-center justify-center gap-12 p-4">
+<section class="hero flex max-h-screen w-full flex-col items-center justify-center gap-12 p-4">
 	<div class="mt-12 flex flex-col items-center justify-center md:mt-0">
 		<h1 class="rubik text-6xl font-bold text-white md:-m-4 md:text-[8rem]">HACKATHON</h1>
 		<h3 class="rubik fs-40 text-center font-light text-white">with Lewis</h3>
@@ -13,22 +13,41 @@
 			Functionally Dysfunctional
 		</h3>
 		<p class="scp white-90 text-center text-lg md:w-3/5 md:text-3xl">
-			Got an itch to code? Join us for a wild 7-day hackathon with Lewis! Whether you're a coding
-			newbie or a tech wizard, this is your chance to have a blast, learn new stuff, and show off
-			your skills. Come for the fun, stay for the epic memories.
+			The Hackathon has been finished it has been a blast! Go check out all the amazing projects
+			that were created! We thank everyone who participated and we hope to see you in the next one!
+			Happy coding!
 		</p>
-		<p class="scp white-90 text-center text-lg md:text-3xl">Let's make some magic - sign up now!</p>
+		<p class="scp white-90 text-center text-lg md:text-3xl">
+			Check out the results and learn more about the event!
+		</p>
 		<div class="buttons align-center">
 			<button class="btn-submit">
-				<a
-					class="scp white-90 text-lg md:text-3xl"
-					target="_blank"
-					href="https://forms.gle/9bA1BEmaV7VvrZ2z8">Submit</a
-				>
+				<a class="scp white-90 text-lg md:text-3xl" href="/results">Results</a>
 			</button>
 			<button class="btn-learn-more">
-				<a class="scp white-90 text-lg md:text-3xl" href="learnmore">Learn more</a>
+				<a class="scp white-90 text-lg md:text-3xl" href="/learnmore">Learn more</a>
 			</button>
 		</div>
 	</div>
-</div>
+</section>
+
+<style>
+	h2 {
+		margin-top: 1rem;
+	}
+
+	.buttons {
+		position: relative;
+		max-height: 10dvh;
+		margin: 2dvh auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		gap: 1.25rem !important;
+	}
+
+	.hero {
+		vertical-align: middle !important;
+		margin: auto 0;
+	}
+</style>

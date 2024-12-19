@@ -9,15 +9,14 @@
 	transition: all;
 	transition-duration: 300ms;
 	scroll-behavior: smooth;
-}
-
-html,
-.main {
 	scrollbar-color: #6680ff #0A0A0A;
-	background-color: #0A0A0A !important;
-	width: 100% !important;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	background-color: #0A0A0A !important;
+	width: 100% !important;
 }
 
 ::selection {
@@ -201,6 +200,21 @@ nav {
 	gap: 2rem;
 }
 
+details {
+	width: 100%;
+	margin: 0.5rem auto;
+}
+
+summary {
+	text-align: left;
+	font-weight: 600;
+	color: var(--white-90);
+	font-size: var(--fs-30);
+	margin-bottom: 0.5rem;
+	text-decoration: none;
+	/* list-style-type:symbols(); */
+}
+
 /* Hamburger menu styles */
 .hamburger {
 	display: none;
@@ -221,7 +235,7 @@ nav {
 
 	.content {
 		margin: 0.6rem auto;
-		margin-top: 7rem;
+		/* margin-top: 7rem; */
 	}
 
 	nav {
@@ -299,7 +313,7 @@ nav {
 	align-items: center;
 	width: clamp(80%, 70% + 10dvw, 100%);
 	margin: 1.2rem auto;
-	margin-top: 6rem;
+	/* margin-top: 6rem; */
 }
 
 .section {

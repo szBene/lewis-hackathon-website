@@ -3,10 +3,10 @@
 	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
 
-	// Reactive variables to manage state
-	let isExpanded = false;
+	let { navitems } = $props();
 
-	// Handle click outside to close the navbar
+	let isExpanded = $state(false);
+
 	let navbar;
 	const handleClickOutside = (event) => {
 		if (isExpanded && navbar && !navbar.contains(event.target)) {
@@ -37,39 +37,46 @@ you can add elements if you want
 <div class="navbar {isExpanded ? 'expand' : ''}" id="navbar">
 	<nav bind:this={navbar}>
 		<div class="title-group">
-			<a class="nav-title" href="/" on:click={() => (isExpanded = false)}>
+			<a class="nav-title" href="/" onclick={() => (isExpanded = false)}>
 				<h1 class="title1 rubik fs-40 white-100 text-center font-semibold">HACKATHON</h1>
 				<h2 class="title2 rubik fs-30 white-100 text-center font-light">with Lewis</h2>
 			</a>
-			<button class="hamburger" on:click={toggleNavbar} id="hamburger" aria-label="hamburger">
+			<button class="hamburger" onclick={toggleNavbar} id="hamburger" aria-label="hamburger">
 				<span></span>
 				<span></span>
 				<span></span>
 			</button>
 		</div>
 		<div class="nav-items {isExpanded ? 'show' : ''}" id="nav-items">
-			<a class="scp white-90 fs-20 text-center underline" href="/learnmore" on:click={toggleNavbar}
-				>Learn More</a
+			{#each navitems as navitem}
+				<a
+					class="scp white-90 fs-20 text-center underline"
+					href={navitem.path}
+					onclick={toggleNavbar}>{navitem.title}</a
+				>
+			{/each}
+			<!-- <a class="scp white-90 fs-20 text-center underline" href="/learnmore" onclick={toggleNavbar}
+			>Learn More</a
 			>
-			<a class="scp white-90 fs-20 text-center underline" href="/rules" on:click={toggleNavbar}
+			<a class="scp white-90 fs-20 text-center underline" href="/rules" onclick={toggleNavbar}
 				>Rules</a
 			>
-			<a class="scp white-90 fs-20 text-center underline" href="/theme" on:click={toggleNavbar}
+			<a class="scp white-90 fs-20 text-center underline" href="/theme" onclick={toggleNavbar}
 				>Theme</a
-			>
+			> -->
 			<!-- <a
 				class="scp white-90 fs-20 text-center underline"
 				target="_blank"
 				href="https://forms.gle/sDpNYnAcsryDDShx8">Sign Up</a
-			 on:click={toggleNavbar}>
+			 onclick={toggleNavbar}>
 			<a
 				class="scp white-90 fs-20 text-center font-semibold underline"
 				target="_blank"
 				href="https://forms.gle/9bA1BEmaV7VvrZ2z8">Submit</a
-			 on:click={toggleNavbar}> -->
-			<a class="scp white-90 fs-20 text-center underline" href="/results" on:click={toggleNavbar}
+			 onclick={toggleNavbar}> -->
+			<!-- <a class="scp white-90 fs-20 text-center underline" href="/results" onclick={toggleNavbar}
 				>Results</a
-			>
+			> -->
 		</div>
 	</nav>
 </div>

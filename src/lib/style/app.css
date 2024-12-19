@@ -1,10 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-html {
+html, .main {
 	scrollbar-color: #6680ff #0A0A0A;
 	background-color: #0A0A0A !important;
 	width: 100% !important;

@@ -1,0 +1,119 @@
+<script>
+	import '$lib/style/app.css';
+</script>
+
+<div class="content align-left">
+	<details class="section about accordion" open>
+		<summary class="section-title rubik white-90 fs-30 text-left font-semibold">
+			What's the Deal?
+		</summary>
+		<p class="section-body scp white-90 fs-20 text-left">
+			Our hackathon is a 7-day online event where you can dive into coding, learn new skills, and
+			work on an exciting project with a like-minded team or alone. This is your chance to unleash
+			your creativity and coding skills from the comfort of your own home. Starting on August 9,
+			we'll kick things off by announcing the theme. You'll then have 7 days to brainstorm, design,
+			and develop a project that fits the theme.
+		</p>
+		<p class="section-body scp white-90 fs-20 text-left">
+			This event is all about pushing your limits, trying new things, having fun and learning while
+			doing it. Whether you want to build a game, an app, or a new tool, the sky is the limit!
+		</p>
+		<h6 class="section-subtitle scp white-90 fs-20 text-left font-bold">Here is how it goes:</h6>
+		<ul class="section-list">
+			<li class="scp white-90 fs-20 list-item text-left">
+				Registration: On July 30, we will open registration, and you'll be able to sign up for the
+				event. Registration will be kept open until the hackathon ends.
+			</li>
+			<li class="scp white-90 fs-20 list-item text-left">
+				Theme Announcement: On August 9, we'll reveal the hackathon theme, which will guide your
+				project development.
+			</li>
+			<li class="scp white-90 fs-20 list-item text-left">
+				Project Development: Work individually or in teams to create something amazing. You're free
+				to use any tools, languages, or frameworks that comply with the
+				<a class="white-90 underline" href="rules">rules</a>.
+			</li>
+			<li class="scp white-90 fs-20 list-item text-left">
+				Submission: Submit your project by the deadline on August 16. We'll provide the form closer
+				to the Hackathon's end date.
+			</li>
+			<li class="scp white-90 fs-20 list-item text-left">
+				Results: Projects will be judged based on their alignment with the theme, originality and
+				some aspects of code quality. We are aiming to announce the winners roughly a month after
+				the hackathon ends.
+			</li>
+		</ul>
+	</details>
+	<details class="section join-prep accordion">
+		<summary class="section-title rubik white-90 fs-30 text-left font-semibold">
+			Who Can Join and How to Prepare
+		</summary>
+		<p class="section-body scp white-90 fs-20 text-left">
+			Everyone! Whether you're a beginner looking for your first real challenge or a seasoned
+			developer ready to take on some more, there is a spot for you. Just bring your enthusiasm and
+			creativity, and the rest will take care of itself.
+		</p>
+		<p class="section-body scp white-90 fs-20 text-left">
+			If you're not an advanced programmer, we recommend to join a team of up to 3 people. There are
+			many like you, we are sure you'll be able to find or create one yourself. If you are looking
+			to join or create a team, check out the
+			<i class="font-semibold">looking-for-teams</i> channel on our
+			<a class="white-90 underline" target="_blank" href="https://discord.com/invite/5uw4eCQf6Z"
+				>Discord server</a
+			>.
+		</p>
+		<p class="section-body scp white-90 fs-20 text-left">
+			We also recommend to brush up on your skills beforehand, so you can work more effectively. You
+			never know what the project will require.
+		</p>
+		<h6 class="section-subtitle scp white-90 text-left text-3xl font-semibold">How to join?</h6>
+		<p class="section-body scp white-90 fs-20 text-left">
+			Once you decided to participate in a team or alone, head over to our
+			<a class="white-90 underline" target="_blank" href="https://forms.gle/sDpNYnAcsryDDShx8"
+				>registration form</a
+			>. Here, you'll need to fill out some basic info. Important, if you are part of a team, you
+			all need to enter the same names to be considered a team.
+		</p>
+	</details>
+
+	<details class="section prizes accordion">
+		<summary class="section-title rubik white-90 fs-30 text-left font-semibold"> Prizes </summary>
+		<p class="section-body scp white-90 fs-20 text-left">
+			We will choose 3 winning submissions for each of the categories we defined internally, plus a
+			few other projects as honorary mentions. The 3 winning projects will receive some prizes,
+			which we are still working on.
+		</p>
+	</details>
+
+	<details class="section faq accordion">
+		<summary class="section-title rubik white-90 fs-30 text-left font-semibold"> FAQ </summary>
+		<div class="section-faq-group">
+			<p class="section-body scp white-90 fs-20 text-left">
+				Q: What if I'm not part of a team? Can I join as a solo participant?
+			</p>
+			<p class="section-body scp white-90 fs-20 text-left">
+				A: No problem! You can participate as an individual, or you can find or create a team on our
+				<a class="white-90 underline" target="_blank" href="https://discord.com/invite/5uw4eCQf6Z"
+					>Discord server</a
+				>, in the <i class="font-semibold">looking-for-teams</i> channel. You can also invite your friends
+				from other places to form a team.
+			</p>
+		</div>
+		<div class="section-faq-group">
+			<p class="section-body scp white-90 fs-20 text-left">
+				Q: Do I need to stay online the whole time?
+			</p>
+			<p class="section-body scp white-90 fs-20 text-left">
+				A: While you need to be available for your team to work on your project, you and your team
+				can manage your own schedule and work at your own pace, your own way. There is no need to
+				report your progress to us.
+			</p>
+		</div>
+		<div class="section-faq-group">
+			<p class="section-body scp white-90 fs-20 text-left">Q: Is this event free to join?</p>
+			<p class="section-body scp white-90 fs-20 text-left">
+				A: Yes, it's completely free. All we ask for in return is that you play fair and have fun.
+			</p>
+		</div>
+	</details>
+</div>

@@ -64,6 +64,11 @@ button:hover {
 	box-shadow: inset #99aaff42 0 0 2rem;
 }
 
+button#hamburger{
+	border: none;
+	background: none;
+}
+
 .rubik {
 	font-family: 'Rubik', sans-serif !important;
 	font-optical-sizing: auto;

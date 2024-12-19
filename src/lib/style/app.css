@@ -162,7 +162,7 @@ button:hover {
 
 nav {
 	/* part of navbar */
-	height: 100%;
+	/* height: 100%; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

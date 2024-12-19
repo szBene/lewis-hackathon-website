@@ -164,7 +164,7 @@ button#hamburger {
 			#0F1B57 40%,
 			#0F248A 60%,
 			#6680FF 98%,
-			#0F1B57 100%) left bottom #00000000 no-repeat;
+			#0F1B57 100%) left bottom #00000069 no-repeat;
 	background-size: 100% 5px;
 	overflow: hidden;
 	/* Hide overflowing content when collapsed */
@@ -218,6 +218,9 @@ summary {
 /* Hamburger menu styles */
 .hamburger {
 	display: none;
+	background: none;
+	border: none;
+	box-shadow: none;
 }
 
 .hamburger span {
@@ -225,6 +228,7 @@ summary {
 	height: 3px;
 	background: #fff;
 	border-radius: 2px;
+	box-shadow: none;
 }
 
 /* Media query for mobile view */
@@ -343,6 +347,7 @@ summary {
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
+	padding: 0.5rem
 }
 
 .lewis {

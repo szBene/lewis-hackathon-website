@@ -37,9 +37,9 @@ you can add elements if you want
 <div class="navbar {isExpanded ? 'expand' : ''}" id="navbar">
 	<nav bind:this={navbar}>
 		<div class="title-group">
-			<a class="nav-title" href="/" on:click={()=>isExpanded = false}>
-				<h1 class="title1 rubik fs-40 text-center font-semibold text-white">HACKATHON</h1>
-				<h2 class="title2 rubik fs-30 text-center font-light text-white">with Lewis</h2>
+			<a class="nav-title" href="/" on:click={() => (isExpanded = false)}>
+				<h1 class="title1 rubik fs-40 white-100 text-center font-semibold">HACKATHON</h1>
+				<h2 class="title2 rubik fs-30 white-100 text-center font-light">with Lewis</h2>
 			</a>
 			<button class="hamburger" on:click={toggleNavbar} id="hamburger" aria-label="hamburger">
 				<span></span>
@@ -48,9 +48,15 @@ you can add elements if you want
 			</button>
 		</div>
 		<div class="nav-items {isExpanded ? 'show' : ''}" id="nav-items">
-			<a class="scp white-90 fs-20 text-center underline" href="/learnmore" on:click={toggleNavbar}>Learn More</a>
-			<a class="scp white-90 fs-20 text-center underline" href="/rules" on:click={toggleNavbar}>Rules</a>
-			<a class="scp white-90 fs-20 text-center underline" href="/theme" on:click={toggleNavbar}>Theme</a>
+			<a class="scp white-90 fs-20 text-center underline" href="/learnmore" on:click={toggleNavbar}
+				>Learn More</a
+			>
+			<a class="scp white-90 fs-20 text-center underline" href="/rules" on:click={toggleNavbar}
+				>Rules</a
+			>
+			<a class="scp white-90 fs-20 text-center underline" href="/theme" on:click={toggleNavbar}
+				>Theme</a
+			>
 			<!-- <a
 				class="scp white-90 fs-20 text-center underline"
 				target="_blank"
@@ -61,7 +67,9 @@ you can add elements if you want
 				target="_blank"
 				href="https://forms.gle/9bA1BEmaV7VvrZ2z8">Submit</a
 			 on:click={toggleNavbar}> -->
-			<a class="scp white-90 fs-20 text-center underline" href="/results" on:click={toggleNavbar}>Results</a>
+			<a class="scp white-90 fs-20 text-center underline" href="/results" on:click={toggleNavbar}
+				>Results</a
+			>
 		</div>
 	</nav>
 </div>

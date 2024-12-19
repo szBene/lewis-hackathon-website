@@ -4,8 +4,8 @@
 
 <section class="hero flex max-h-screen w-full flex-col items-center justify-center gap-12 p-4">
 	<div class="mt-12 flex flex-col items-center justify-center md:mt-0">
-		<h1 class="rubik text-6xl font-bold text-white md:-m-4 md:text-[8rem]">HACKATHON</h1>
-		<h3 class="rubik fs-40 text-center font-light text-white">with Lewis</h3>
+		<h1 class="rubik white-100 text-6xl font-bold md:-m-4 md:text-[8rem]">HACKATHON</h1>
+		<h3 class="rubik fs-40 white-100 text-center font-light">with Lewis</h3>
 		<h2 class="rubik white-90 text-center text-3xl font-semibold md:text-6xl">August 9-16, 2024</h2>
 	</div>
 	<div class="flex flex-col items-center justify-center gap-4">
@@ -51,16 +51,16 @@
 		margin-top: 5rem;
 	}
 
-	@media(max-width: 769px){
-		.hero{
+	@media (max-width: 769px) {
+		.hero {
 			margin-top: 2rem;
 		}
-		@media(max-width:767px){
-			.hero{
+		@media (max-width: 767px) {
+			.hero {
 				margin-top: 5rem;
 			}
 			@media (max-width) {
-				.hero{
+				.hero {
 					margin-top: 2rem;
 				}
 			}

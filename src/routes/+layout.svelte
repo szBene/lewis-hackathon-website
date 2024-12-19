@@ -23,7 +23,7 @@
 		flex-direction: column;
 		min-height: 100vh;
 		padding-top: 5rem;
-		background: radial-gradient(#0F1B57, #0A0A0A) !important;
+		background: radial-gradient(in lch, var(--blue-10), var(--dark-grey)) !important;
 	}
 	.slot-container {
 		flex: 1;

@@ -48,6 +48,22 @@
 
 	.hero {
 		vertical-align: middle !important;
-		margin: auto 0;
+		margin-top: 5rem;
+	}
+
+	@media(max-width: 769px){
+		.hero{
+			margin-top: 2rem;
+		}
+		@media(max-width:767px){
+			.hero{
+				margin-top: 5rem;
+			}
+			@media (max-width) {
+				.hero{
+					margin-top: 2rem;
+				}
+			}
+		}
 	}
 </style>

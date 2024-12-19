@@ -2,20 +2,104 @@
 	import '$lib/style/app.css';
 </script>
 
+<!--
+NOTE: moved svg directly here, to allow css to have an effect on the color
+im fully aware that this might not be the best or nicest solution,
+but it is the simplest one, considering we dont have to touch it
+-->
+
 <div class="footer-section">
 	<div class="lewis">
 		<p class="scp blue fs-20 align-left font-medium">Coding with Lewis</p>
-		<a target="_blank" href="https://www.youtube.com/@CodingwithLewis">
-			<img class="icon" src="assets/icons/youtube.svg" alt="youtube channel" />
+		<a target="_blank" href="https://www.youtube.com/@CodingwithLewis" aria-label="youtube"
+			><svg
+				width="100%"
+				height="100%"
+				viewBox="0 0 40 40"
+				version="1.1"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				xml:space="preserve"
+				xmlns:serif="http://www.serif.com/"
+				style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+				><g
+					><path
+						d="M36.849,11.43c-0.415,-1.536 -1.618,-2.739 -3.154,-3.154c-2.765,-0.755 -13.895,-0.755 -13.895,-0.755c0,0 -11.13,0.023 -13.896,0.777c-1.535,0.416 -2.738,1.619 -3.154,3.155c-0.836,4.913 -1.161,12.4 0.023,17.117c0.416,1.536 1.619,2.739 3.154,3.154c2.766,0.755 13.896,0.755 13.896,0.755c-0,-0 11.13,-0 13.895,-0.755c1.535,-0.415 2.739,-1.618 3.154,-3.154c0.882,-4.92 1.154,-12.403 -0.023,-17.14l0,-0Z"
+					/><path class="exc" d="M16.257,25.348l9.234,-5.348l-9.234,-5.348l0,10.696Z" /></g
+				></svg
+			></a
+		>
+		<a target="_blank" href="https://discord.com/invite/5uw4eCQf6Z" aria-label="discord">
+			<svg
+				width="100%"
+				height="100%"
+				viewBox="0 0 40 40"
+				version="1.1"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				xml:space="preserve"
+				xmlns:serif="http://www.serif.com/"
+				style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+				><path
+					d="M31.19,9.612c-2.114,-0.99 -4.351,-1.693 -6.651,-2.091c-0.286,0.518 -0.621,1.215 -0.852,1.769c-2.48,-0.373 -4.937,-0.373 -7.372,0c-0.23,-0.554 -0.573,-1.251 -0.862,-1.769c-2.302,0.399 -4.541,1.103 -6.656,2.096c-4.21,6.361 -5.351,12.564 -4.78,18.679c2.792,2.085 5.497,3.351 8.157,4.18c0.661,-0.909 1.246,-1.872 1.748,-2.878c-0.956,-0.363 -1.876,-0.811 -2.752,-1.338c0.231,-0.171 0.456,-0.349 0.675,-0.534c5.305,2.481 11.069,2.481 16.31,-0c0.22,0.184 0.445,0.362 0.675,0.534c-0.877,0.528 -1.8,0.977 -2.757,1.341c0.505,1.01 1.088,1.974 1.747,2.878c2.663,-0.829 5.371,-2.096 8.163,-4.183c0.67,-7.089 -1.143,-13.235 -4.793,-18.685l0,0.001Zm-16.546,14.923c-1.592,0 -2.898,-1.487 -2.898,-3.297c-0,-1.81 1.278,-3.3 2.898,-3.3c1.621,0 2.927,1.487 2.899,3.3c0.002,1.81 -1.278,3.297 -2.899,3.297Zm10.712,0c-1.593,0 -2.899,-1.487 -2.899,-3.297c0,-1.81 1.278,-3.3 2.899,-3.3c1.62,0 2.926,1.487 2.898,3.3c0,1.81 -1.278,3.297 -2.898,3.297Z"
+				/></svg
+			>
 		</a>
-		<a target="_blank" href="https://discord.com/invite/5uw4eCQf6Z">
-			<img class="icon" src="assets/icons/discord.svg" alt="discord server" />
+		<a target="_blank" href="https://www.instagram.com/lewismenelaws/" aria-label="instagram">
+			<svg
+				width="100%"
+				height="100%"
+				viewBox="0 0 40 40"
+				version="1.1"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				xml:space="preserve"
+				xmlns:serif="http://www.serif.com/"
+				style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+				><path
+					d="M20,8.738c3.668,0 4.102,0.014 5.551,0.08c1.339,0.061 2.067,0.285 2.551,0.473c0.641,0.25 1.098,0.547 1.579,1.028c0.481,0.481 0.778,0.938 1.028,1.579c0.188,0.484 0.412,1.212 0.473,2.551c0.066,1.449 0.08,1.883 0.08,5.551c-0,3.668 -0.014,4.102 -0.08,5.551c-0.061,1.339 -0.285,2.067 -0.473,2.551c-0.25,0.641 -0.547,1.098 -1.028,1.579c-0.481,0.481 -0.938,0.779 -1.579,1.028c-0.484,0.188 -1.212,0.412 -2.551,0.473c-1.449,0.066 -1.883,0.08 -5.551,0.08c-3.668,-0 -4.103,-0.014 -5.551,-0.08c-1.339,-0.061 -2.067,-0.285 -2.551,-0.473c-0.641,-0.249 -1.098,-0.547 -1.579,-1.028c-0.481,-0.481 -0.779,-0.938 -1.028,-1.579c-0.188,-0.484 -0.412,-1.212 -0.473,-2.551c-0.066,-1.449 -0.08,-1.883 -0.08,-5.551c0,-3.668 0.014,-4.102 0.08,-5.551c0.061,-1.339 0.285,-2.067 0.473,-2.551c0.249,-0.641 0.547,-1.098 1.028,-1.579c0.481,-0.481 0.938,-0.778 1.579,-1.028c0.484,-0.188 1.212,-0.412 2.551,-0.473c1.449,-0.066 1.883,-0.08 5.551,-0.08m0,-2.475c-3.731,0 -4.199,0.016 -5.664,0.083c-1.462,0.067 -2.461,0.299 -3.334,0.638c-0.904,0.351 -1.67,0.821 -2.433,1.585c-0.764,0.763 -1.234,1.529 -1.585,2.433c-0.339,0.874 -0.571,1.872 -0.638,3.334c-0.067,1.465 -0.083,1.933 -0.083,5.664c0,3.731 0.016,4.199 0.083,5.664c0.067,1.462 0.299,2.461 0.638,3.334c0.351,0.904 0.821,1.67 1.585,2.433c0.763,0.764 1.529,1.234 2.433,1.585c0.874,0.339 1.872,0.571 3.334,0.638c1.465,0.067 1.933,0.083 5.664,0.083c3.731,-0 4.199,-0.016 5.664,-0.083c1.462,-0.067 2.46,-0.299 3.334,-0.638c0.904,-0.351 1.67,-0.821 2.433,-1.585c0.764,-0.763 1.234,-1.529 1.585,-2.433c0.339,-0.874 0.571,-1.872 0.638,-3.334c0.067,-1.465 0.083,-1.933 0.083,-5.664c-0,-3.731 -0.016,-4.199 -0.083,-5.664c-0.067,-1.462 -0.299,-2.46 -0.638,-3.334c-0.351,-0.904 -0.821,-1.67 -1.585,-2.433c-0.763,-0.764 -1.529,-1.234 -2.433,-1.585c-0.874,-0.339 -1.872,-0.571 -3.334,-0.638c-1.465,-0.067 -1.933,-0.083 -5.664,-0.083Zm0,6.683c-3.896,-0 -7.054,3.158 -7.054,7.054c-0,3.896 3.158,7.054 7.054,7.054c3.896,0 7.054,-3.158 7.054,-7.054c0,-3.896 -3.158,-7.054 -7.054,-7.054Zm0,11.633c-2.529,-0 -4.579,-2.05 -4.579,-4.579c0,-2.529 2.05,-4.579 4.579,-4.579c2.529,0 4.579,2.05 4.579,4.579c-0,2.529 -2.05,4.579 -4.579,4.579Zm8.981,-11.912c0,0.911 -0.738,1.649 -1.648,1.649c-0.911,-0 -1.649,-0.738 -1.649,-1.649c0,-0.91 0.738,-1.648 1.649,-1.648c0.91,-0 1.648,0.738 1.648,1.648Z"
+				/></svg
+			>
 		</a>
-		<a target="_blank" href="https://x.com/LewisMenelaws">
-			<img class="icon" src="assets/icons/x.svg" alt="x" />
-		</a>
-		<a target="_blank" href="https://www.instagram.com/lewismenelaws/">
-			<img class="icon" src="assets/icons/instagram.svg" alt="instagram" />
+		<a target="_blank" href="https://x.com/LewisMenelaws" aria-label="x">
+			<svg
+				width="100%"
+				height="100%"
+				viewBox="0 0 40 40"
+				version="1.1"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				xml:space="preserve"
+				xmlns:serif="http://www.serif.com/"
+				style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+				><path
+					d="M22.323,18.089l9.091,-10.568l-2.154,0l-7.894,9.176l-6.304,-9.176l-7.272,0l9.534,13.876l-9.534,11.082l2.154,-0l8.336,-9.69l6.658,9.69l7.272,-0l-9.887,-14.39l0,0Zm-2.951,3.43l-0.966,-1.382l-7.686,-10.994l3.309,0l6.203,8.873l0.966,1.382l8.063,11.533l-3.309,-0l-6.58,-9.411l0,-0.001Z"
+				/></svg
+			>
 		</a>
 	</div>
 </div>
+
+<style>
+	p {
+		margin-right: 0.5rem;
+	}
+	a {
+		align-items: center;
+		justify-content: center;
+		margin: 0 0.5rem;
+	}
+	svg {
+		fill: none;
+		stroke: var(--blue-60);
+		/* stroke-width: 1px; */
+		fill: var(--blue-60);
+		fill-rule: nonzero;
+		margin: auto;
+		width: 32px;
+		height: 32px;
+	}
+	svg .exc {
+		fill: var(--dark-grey);
+	}
+</style>

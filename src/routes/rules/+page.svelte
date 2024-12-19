@@ -14,8 +14,8 @@
 			malware, inappropriate content, or anything that goes against basic human decency.
 		</p>
 	</div>
-	<details class="section project accordion" open>
-		<summary class="section-title scp white-90 fs-20 text-left font-bold"
+	<details class="section project-guidelines accordion" open>
+		<summary class="section-title rubik white-90 fs-30 text-left font-semibold"
 			>Project Guidelines</summary
 		>
 		<ul class="section-list">
@@ -40,7 +40,7 @@
 		</ul>
 	</details>
 	<details class="section submission accordion">
-		<summary class="section-title scp white-90 fs-20 text-left font-bold"
+		<summary class="section-title rubik white-90 fs-30 text-left font-semibold"
 			>Submission Guidelines</summary
 		>
 		<ul class="section-list">
@@ -63,7 +63,7 @@
 		</ul>
 	</details>
 	<details class="section team accordion">
-		<summary class="section-title scp white-90 fs-20 text-left font-bold"
+		<summary class="section-title rubik white-90 fs-30 text-left font-semibold"
 			>Team and Participation Guidelines
 		</summary>
 		<ul class="section-list">

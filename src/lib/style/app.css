@@ -200,7 +200,8 @@ nav {
 	gap: 2rem;
 }
 
-details {
+/* doesnt work in pages for some weird reason*/
+/* details {
 	width: 100%;
 	margin: 0.5rem auto;
 }
@@ -208,12 +209,12 @@ details {
 summary {
 	text-align: left;
 	font-weight: 600;
-	color: var(--white-90);
-	font-size: var(--fs-30);
+	color: var(--white-90) !important;
+	font-size: var(--fs-30) !important;
 	margin-bottom: 0.5rem;
 	text-decoration: none;
-	/* list-style-type:symbols(); */
-}
+	cursor: pointer;
+} */
 
 /* Hamburger menu styles */
 .hamburger {

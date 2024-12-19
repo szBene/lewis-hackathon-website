@@ -5,11 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-html, .main {
+* {
+	transition: all;
+	transition-duration: 300ms;
+	scroll-behavior: smooth;
+}
+
+html,
+.main {
 	scrollbar-color: #6680ff #0A0A0A;
 	background-color: #0A0A0A !important;
 	width: 100% !important;
-	scroll-behavior: smooth;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -64,7 +70,7 @@ button:hover {
 	box-shadow: inset #99aaff42 0 0 2rem;
 }
 
-button#hamburger{
+button#hamburger {
 	border: none;
 	background: none;
 }
@@ -232,6 +238,14 @@ nav {
 		gap: 1rem;
 	}
 
+	.nav-items>* {
+		margin: .2rem .5rem;
+	}
+
+	.nav-items:last-child {
+		margin-bottom: 1rem;
+	}
+
 	.fs-20 {
 		font-size: clamp(1.2rem, 1.2rem + 0.5dvw, 2rem) !important;
 	}
@@ -261,7 +275,7 @@ nav {
 		margin-right: 1rem;
 	}
 
-	@media (max-width: 28rem) {
+	@media (max-width: 470px) {
 		.nav-title {
 			/* part of navbar */
 			display: flex;

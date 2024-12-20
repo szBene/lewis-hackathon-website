@@ -7,7 +7,7 @@
 		<h3 class="section-title rubik white-90 fs-40 text-center font-semibold">Theme</h3>
 		<h2 class="section-body scp white-90 fs-40 text-center">Functionally Dysfunctional</h2>
 		<div class="flex items-center justify-center">
-			<img src="assets/theme/themethumbnail.png" alt="" width="50%" class="text-center" />
+			<img src="assets/theme/themethumbnail.png" alt="" width="50%" />
 		</div>
 		<p class="section-body scp white-90 fs-20">
 			We are looking for people to be creative by building a project that is functional but has some
@@ -23,15 +23,19 @@
 				<video src="assets/theme/example1.mp4" controls class="block h-auto w-full">
 					<track kind="captions" />
 				</video>
-				<p class="block">A video player that only plays video when you balance the bar.</p>
+				<p class="section-body scp fs-16">
+					A video player that only plays video when you balance the bar.
+				</p>
 			</div>
 			<div class="example-item text-left">
-				<img src="assets/theme/example2.png" alt="Example 2" class="h-auto w-full" />
-				<p>A captcha that forces you to play minesweeper to pass.</p>
+				<img src="assets/theme/example2.png" alt="Example 2" />
+				<p class="section-body scp fs-16">A captcha that forces you to play minesweeper to pass.</p>
 			</div>
 			<div class="example-item text-left">
-				<img src="assets/theme/example3.png" alt="Example 3" class="h-auto w-full" />
-				<p>A terminal application that forces the player to think in strange ways.</p>
+				<img src="assets/theme/example3.png" alt="Example 3" />
+				<p class="section-body scp fs-16">
+					A terminal application that forces the player to think in strange ways.
+				</p>
 			</div>
 		</div>
 		<p class="section-body scp white-90 fs-20">

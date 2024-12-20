@@ -53,13 +53,17 @@
 </svelte:head>
 
 <section class="main">
-	<Navbar navitems={navItems}></Navbar>
+	{#if page.url.pathname !== '/'}
+		<Navbar navitems={navItems}></Navbar>
+	{/if}
 
 	<div class="slot-container">
 		{@render children()}
 	</div>
 
 	<Footer></Footer>
+
+	<div class="background"></div>
 </section>
 
 <style>
@@ -67,9 +71,8 @@
 		display: flex;
 		flex: 1;
 		flex-direction: column;
-		min-height: 100vh;
+		min-height: 100dvh;
 		padding-top: 5rem;
-		background: radial-gradient(in lch, var(--blue-10), var(--dark-grey)) !important;
 	}
 	.slot-container {
 		flex: 1;
@@ -83,5 +86,15 @@
 		.slot-container {
 			padding: auto 0;
 		}
+	}
+	.background {
+		z-index: -1;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		background: radial-gradient(in lch, var(--blue-10), var(--dark-grey)) !important;
 	}
 </style>

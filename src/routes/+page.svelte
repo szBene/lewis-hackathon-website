@@ -39,11 +39,11 @@
 	.buttons {
 		position: relative;
 		max-height: 10dvh;
-		margin: 2dvh auto;
+		margin: 1rem auto;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
-		gap: 1.25rem !important;
+		justify-content: space-around;
+		gap: 1rem !important;
 	}
 
 	.hero {
@@ -53,17 +53,8 @@
 
 	@media (max-width: 769px) {
 		.hero {
-			margin-top: 2rem;
-		}
-		@media (max-width: 767px) {
-			.hero {
-				margin-top: 5rem;
-			}
-			@media (max-width) {
-				.hero {
-					margin-top: 2rem;
-				}
-			}
+			margin-top: -6rem;
+			margin-bottom: -1rem;
 		}
 	}
 </style>

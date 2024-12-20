@@ -9,8 +9,10 @@ but it is the simplest one, considering we dont have to touch it
 -->
 
 <div class="footer-section">
+	<a class="scp blue fs-20 align-left font-medium" href="https://lewismenelaws.com"
+		>Coding with Lewis</a
+	>
 	<div class="lewis">
-		<p class="scp blue fs-20 align-left font-medium">Coding with Lewis</p>
 		<a target="_blank" href="https://www.youtube.com/@CodingwithLewis" aria-label="youtube"
 			><svg
 				width="100%"
@@ -81,9 +83,6 @@ but it is the simplest one, considering we dont have to touch it
 </div>
 
 <style>
-	p {
-		margin-right: 0.5rem;
-	}
 	a {
 		align-items: center;
 		justify-content: center;
